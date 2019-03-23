@@ -265,17 +265,32 @@ footer {
   margin-left: 4%;
 }
 .home .walk .walk-img img {
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 0 1em;
   }
   .home .space-images .sky,
   .home .space-images .launch {
     display: none;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 1em;
+  }
+  .home .walk .walk-text,
+  .home .walk .walk-img {
+    width: 100%;
+  }
+  .home .walk .walk-img {
+    margin-left: 0;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
   }
 }
