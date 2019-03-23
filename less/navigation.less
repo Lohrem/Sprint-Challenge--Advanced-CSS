@@ -14,9 +14,7 @@
   }
 
   nav {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    .center();
     margin-top: 1.5em;
 
     .links {
@@ -33,5 +31,18 @@
     width: 100%;
     height: auto;
     border-radius: 15px;
+  }
+}
+
+@media @phone {
+  .nav-header {
+
+    nav {
+
+      .links {
+        font-size: 1.6em;
+        margin: 0 1em;
+      }
+    }
   }
 }

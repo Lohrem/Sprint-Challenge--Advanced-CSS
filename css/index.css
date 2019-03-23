@@ -175,8 +175,8 @@ p {
 }
 .nav-header nav {
   display: flex;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
   margin-top: 1.5em;
 }
 .nav-header nav .links {
@@ -189,6 +189,12 @@ p {
   width: 100%;
   height: auto;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .nav-header nav .links {
+    font-size: 1.6em;
+    margin: 0 1em;
+  }
 }
 footer {
   color: #22283B;
@@ -250,12 +256,26 @@ footer {
   padding: 0.75em 2em;
   border: 1px solid #81848E;
 }
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
-  width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    height: auto;
+    padding: 0 1em;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
