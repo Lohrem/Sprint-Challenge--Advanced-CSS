@@ -1,1 +1,18 @@
 // Mixins Here
+.btn(@bg-color; @font-color; @radius; @padding; @border) {
+  background: @bg-color;
+  color: @font-color;
+  border-radius: @radius;
+  padding: @padding;
+  border: @border;
+
+  &:hover {
+    background: @font-color;
+    color: @bg-color;
+  }
+}
+.center() {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
